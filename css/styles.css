@@ -1,0 +1,294 @@
+:root {
+    --primarytext-color: #212121;
+    --secondarytext-color: #757575;
+    --logo-color: #2196F3; 
+    --background-color: #F5F5F5;
+    --headerbackground-color: #FFFFFF;
+    --footerbackground-color: #2F303A;
+    --headersecondlogopart-color: #000000;
+}
+
+body { 
+
+    background-color: var(--background-color);
+    color: var(--primarytext-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+/* Оформление Логотипа сервиса */
+
+.logo {
+font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--logo-color);
+    text-decoration: none;
+}
+
+.headersecondlogo {
+    color: var(--headersecondlogopart-color);
+}
+
+.footersecond-logo {
+    color: var(--headerbackground-color);
+}
+
+/* Оформление Навигации */
+
+.site-nav .link {
+ font-family: Roboto, sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--primarytext-color);
+        text-decoration: none;
+        
+}
+
+/*Добавляем эффект hover + focus на Панель Навигации */
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+color: var(--logo-color);
+}
+
+/* Попытка сделать подсветку текущей страницы */
+
+.site-nav .link.current {
+    color: var(--logo-color)
+}
+
+
+/* Выбираем второе портфолио и назначаем ему цвет без отдельного класса */
+/*
+.site-nav .link[href*="portfolio"] {  Сначала я думал что портфолио
+    color: var(--logo-color)       просто само по себе другого цвета
+}
+*/
+
+/* Как же задолбали эти значки списков */
+
+.buttoncollection-list, 
+.serviceprojects, 
+.site-link,
+.site-contact,
+.footerlist-hideme,
+.serviceadv-list,
+.servicework-list,
+.teammembers-list {
+    list-style-type: none;
+}
+
+/* Контактная информация */
+
+.site-contact .site-contactlink {
+    
+        color: var(--secondarytext-color);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+}
+
+/* Это hover + focus элементы */
+
+.site-contactlink:hover,
+.site-contactlink:focus {
+    color: var(--logo-color);
+}
+
+/* Такой же метод что и с навигацией */
+/*
+.site-contact .site-contactlink[href*="tel"] {
+    color: var(--secondarytext-color);
+    
+}*/
+
+/* Portfolio.html */
+/* Центрируем Фильтр */
+/* <main> section start */
+
+.filterbutton-collection {
+    align-content: center
+}
+
+/* Основные параметры кнопок */
+
+.button {
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+        letter-spacing: 0.03em;
+        color: var(--primarytext-color);
+}
+
+/* Стиль основной кнопки "Заказать услугу" ---) "СТУДИЯ" */
+
+.hero .button {
+    background-color: var(--logo-color);
+    color: var(--headerbackground-color);
+
+}
+
+/* Отдельно ставим измененный курсор */
+
+.filterbutton-collection, .hero .pointer {
+    cursor: pointer;
+}
+
+/* Ставим состояние наведения и TAB */
+
+.filterbutton-collection .button:hover,
+.filterbutton-collection .button:focus,
+.hero .button:hover,
+.hero .button:focus {
+    color: var(--headerbackground-color);
+    background-color: var(--logo-color);
+} 
+
+/* Подготавливаем есто для нашего бокса с контентом */
+
+.serviceprojects {
+    align-content: center;
+}
+
+/* Ставим стили для наших заголовков */
+
+.biggertext {
+        font-size: 18px;
+        line-height: 2.00;
+        letter-spacing: 0.06em;
+        color: var(--primarytext-color);
+}
+
+/* Ставим стили для наших текстов под заголовками */
+
+.text {
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.03em;
+        color: var(--secondarytext-color);
+}
+
+/* Делаем задний фон для футера */
+
+.footermainsection {
+    background-color: var(--footerbackground-color);
+}
+
+/* Ставим стили для контактов в футере */
+
+.footeradress-city {
+        font-size: 14px;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--headerbackground-color);
+        text-decoration: none;
+}
+
+/* Ставим стили для контактов в футере */
+
+.footeradress-mail, 
+.footeradress-phonenumber {
+        font-size: 14px;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+}
+
+
+/* WEBSTUDIO DEVELOPMENT CSS */
+/* С этого места будет CSS "Студии" */
+/* Да, я начал делать ее вторую, потому - что полностью забыл про нее */
+
+
+/* Создаем стиль заголовок <main> */
+
+.hero .heromain-title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+}
+
+/* Создаем стиль заголовка "Преимущества сервиса" */
+
+.service-adventagetitle .serviceadv-biggertext {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--primarytext-color);
+}
+
+/* Создаем стиль текста "Преимущества сервиса" */
+
+.service-text {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--secondarytext-color);
+}
+
+/* Создаем стиль заголовка "Примеры работ сервиса" и "Наша  команда" */
+
+.service-work .servicework-biggertext,
+.teammembers .teammembers-biggertext {
+  
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--primarytext-color);
+}
+
+/* Создаем стиль заголовка H3 "Наша команда" */
+
+.teammembers .teammembers-teamname {
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        letter-spacing: 0.03em;
+        color: var(--primarytext-color);
+}
+
+/* Создаем стиль текста секции "Наша Команда" */
+
+.teammembers .teammebers-teamdesc {
+
+        font-size: 16px;
+        line-height: 1.18;
+        letter-spacing: 0.03em;
+        color: var(--secondarytext-color);
+}
+
+/* Битва с валидатором // КОСТЫЛЬ */
+/*
+.filterbutton-collection,
+.serviceprojects .hideme {
+visibility: hidden;
+
+}
+*/
+/* ROUND 2 ---> FIGHT! */
+/*
+.serviceprojects, 
+.filterbutton-collection ul {
+    visibility: visible;
+}
+*/
+/* YOUR OPONNENT HAS DOWNED */
+/* FINISH HIM!!!!!!!!!!!! */
+/* FATALITYYYYYYYYYYYYYYY */
