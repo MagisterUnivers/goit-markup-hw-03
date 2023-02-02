@@ -24,9 +24,6 @@
   overflow: hidden;
 }
 
-main {
-  background-color: var(--portfoliobg-color);
-}
 
 body {
   background-color: var(--background-color);
@@ -89,6 +86,33 @@ p {
 
 /* Оформление Навигации */
 
+
+.site-nav.headermainbox {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav.headermainbox  {
+  width: 1230px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: auto;
+
+}
+
+.site-nav.headermainbox .logo {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.site-link.listbox {
+  padding-right: 93px;
+}
+
+.site-contact.listbox {
+  padding-right: 93px;
+}
+
 .site-nav .link {
   font-family: Roboto, sans-serif;
   font-weight: 500;
@@ -121,6 +145,7 @@ p {
 .site-link {
   margin-left: 93px;
 }
+
 
 /*Добавляем эффект hover + focus на Панель Навигации */
 
@@ -208,6 +233,10 @@ p {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 32px;
+  padding-left: 32px;
   letter-spacing: 0.03em;
   color: var(--primarytext-color);
 }
@@ -217,6 +246,8 @@ p {
 .hero .button {
   background-color: var(--logo-color);
   color: var(--headerbackground-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 /* Отдельно ставим измененный курсор */
@@ -379,19 +410,22 @@ p {
   padding-bottom: 94px;
 }
 
-.hero {
+.hero.section.container {
   text-align: center;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .heromain-title {
-  padding-top: 200px;
   padding-bottom: 30px;
-  align-items: center;
 }
 
+
 .heromain-title .button.pointer {
-  padding-top: 0;
   margin: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 .hero.section {
