@@ -226,6 +226,18 @@ p {
   background-color: var(--portfoliobg-color);
 }
 
+.filterbutton-collection.section {
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.uniteportfolio.container {
+  margin-top: 94px;
+  align-items: center;
+  display: flex;
+}
+
 /* Основные параметры кнопок */
 
 .button {
@@ -240,6 +252,20 @@ p {
   letter-spacing: 0.03em;
   color: var(--primarytext-color);
 }
+
+.buttoncollection-list  .button.filter {
+  padding-left: 25px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 25px;
+
+}
+
+
+.buttoncollection-list.btnlistbox .btnitem + .btnitem {
+  padding-left: 8px;
+}
+
 
 /* Стиль основной кнопки "Заказать услугу" ---) "СТУДИЯ" */
 
@@ -295,9 +321,6 @@ p {
   top: 174px;
 }
 
-.btnlistbox .btnitem + .btnitem {
-  margin-left: 8px;
-}
 
 .btnlistbox {
   margin-right: auto;
