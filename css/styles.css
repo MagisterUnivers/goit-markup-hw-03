@@ -7,6 +7,7 @@
     --footerbackground-color: #2F303A;
     --headersecondlogopart-color: #000000;
     --borderheadertransparent-color: #ECECEC; 
+    --portfoliobg-color: #EEEEEE;
 }
 
 .visually-hidden {
@@ -23,6 +24,10 @@
     overflow: hidden;
 }
 
+main {
+    background-color: var(--portfoliobg-color);
+}
+
 body { 
 
     background-color: var(--background-color);
@@ -37,7 +42,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 a {
-    margin 0;
+    margin: 0;
     padding: 0;
 }
 
@@ -97,6 +102,7 @@ font-family: 'Raleway';
     align-items: center;
     margin-bottom: 94px;
     border-bottom: 1px solid var(--borderheadertransparent-color);
+    background-color: var(--headerbackground-color);
 }
 
 .site-link {
@@ -190,7 +196,8 @@ color: var(--logo-color);
 /* <main> section start */
 
 .filterbutton-collection {
-    align-content: center
+    align-content: center;
+    background-color: var(--portfoliobg-color);
 }
 
 /* Основные параметры кнопок */
@@ -238,12 +245,22 @@ color: var(--logo-color);
     display: flex;
 }
 
+.uniteportfolio .container {
+    display: flex;
+    background-color: var(--portfoliobg-color);
+}
+
 .btnlistbox {
     display: flex;
     outline-color: tomato;
-    margin-left: auto;
+/*    margin-left: auto;
     margin-right: auto;
-    margin-bottom: 34px;
+    margin-bottom: 34px; */
+    background-color: var(--portfoliobg-color);
+    width: 575px;
+        height: 54px;
+        left: 512px;
+        top: 174px;
 
 }
 
@@ -266,6 +283,7 @@ color: var(--logo-color);
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 94px;
+    background-color: var(--background-color);
 }
 
 .serviceworkitem:nth-child(3n) {
@@ -302,9 +320,24 @@ color: var(--logo-color);
 
 /* Делаем задний фон для футера */
 
-.footermainsection {
+.footermainsection.container {
     background-color: var(--footerbackground-color);
+    padding-top: 60px;
+    padding-left: auto;
+    padding-right: auto;
 }
+
+.footeritem {
+    display: block;
+}
+
+.footerbox {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 
 /* Ставим стили для контактов в футере */
 
