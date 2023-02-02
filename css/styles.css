@@ -55,11 +55,14 @@ p {
   margin: 0;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
   width: 1230px;
   padding-right: 15px;
   padding-left: 15px;
@@ -103,7 +106,6 @@ p {
 .headermainbox {
   display: flex;
   align-items: center;
-  margin-bottom: 94px;
   border-bottom: 1px solid var(--borderheadertransparent-color);
   background-color: var(--headerbackground-color);
 }
@@ -384,6 +386,7 @@ p {
 .heromain-title {
   padding-top: 200px;
   padding-bottom: 30px;
+  align-items: center;
 }
 
 .heromain-title .button.pointer {
@@ -391,7 +394,9 @@ p {
   margin: 0;
 }
 
-.section.hero.section {
+.hero.section {
+  text-align: center;
+  align-items: flex-start;
   margin-bottom: 94px;
   background-color: var(--footerbackground-color);
 }
@@ -405,9 +410,8 @@ p {
 }
 
 .section.service-adventagetitle.section {
-  padding-bottom: 94px;
   padding-top: 0;
-  align-items: center;
+  padding-bottom: 0;
   margin-bottom: 94px;
 }
 
@@ -431,6 +435,10 @@ p {
   padding-left: 30px;
 }
 
+.serviceadv-biggertext {
+  padding-bottom: 10px;
+}
+
 .service-adventagetitle .serviceadv-biggertext {
   font-weight: 700;
   font-size: 14px;
@@ -451,35 +459,30 @@ p {
 
 /* Создаем стиль заголовка "Примеры работ сервиса" и "Наша  команда" */
 
-
-
-
-.section.service-work.section {
-    display: flex;
-  width: 1230px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-bottom: 94px;
+.service-work.section {
+  padding-top: 0;
   padding-bottom: 0;
+  margin-bottom: 94px;
+}
+
+.servicework-list.container {
   margin-top: 0;
   padding-top: 0;
-  align-items: center;
+}
+
+.servicework-biggertext {
+  padding-bottom: 0;
+  margin-bottom: 50px;
 }
 
 .serviceworkitem {
-    display: block;
+  display: flex;
 }
 
 .servicework-list {
-    align-items: center;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 94px;
-}
-
-.servicework-list .serviceworkitem + .serviceworkitem {
-    margin-left: 30px;
+  text-align: center;
+  align-items: center;
+  display: flex;
 }
 
 .service-work .servicework-biggertext,
@@ -496,7 +499,7 @@ p {
     display: flex;
 }
 
-.section.teammembers.section {
+.teammembers.section {
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom: 94px;
