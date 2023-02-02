@@ -48,6 +48,12 @@ font-family: 'Raleway';
         
 }
 
+.site-link {
+    display: flex;
+}
+
+
+
 /*Добавляем эффект hover + focus на Панель Навигации */
 
 .site-nav .link:hover,
