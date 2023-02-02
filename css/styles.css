@@ -31,6 +31,12 @@ body {
   letter-spacing: 0.03em;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 h1,
 h2,
 h3,
@@ -343,7 +349,7 @@ p {
 
 .serviceprojects.serviceworkbox {
   display: flex;
-  align-items: center;;
+  justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
   background-color: var(--background-color);
