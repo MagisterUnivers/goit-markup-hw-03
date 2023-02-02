@@ -24,7 +24,6 @@
   overflow: hidden;
 }
 
-
 body {
   background-color: var(--background-color);
   color: var(--primarytext-color);
@@ -50,11 +49,6 @@ a {
 p {
   padding: 0;
   margin: 0;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .container {
@@ -258,6 +252,8 @@ p {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-right: 25px;
+      border-color: transparent;
+        border-radius: 4px;
 
 }
 
@@ -269,11 +265,15 @@ p {
 
 /* Стиль основной кнопки "Заказать услугу" ---) "СТУДИЯ" */
 
+
 .hero .button {
   background-color: var(--logo-color);
   color: var(--headerbackground-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 200px;
+    padding: 10px 32px;
 }
 
 /* Отдельно ставим измененный курсор */
@@ -295,6 +295,12 @@ p {
 
 /* Подготавливаем есто для нашего бокса с контентом */
 
+.filterbutton-collection.section {
+  background-color: var(--headerbackground-color);
+}
+
+
+
 .serviceprojects {
   align-content: center;
 }
@@ -303,9 +309,9 @@ p {
   display: flex;
 }
 
-.uniteportfolio .container {
+.uniteportfolio.container {
   display: flex;
-  background-color: var(--portfoliobg-color);
+  background-color: var(--headerbackground-color);
 }
 
 .btnlistbox {
@@ -325,18 +331,18 @@ p {
 .btnlistbox {
   margin-right: auto;
   margin-left: auto;
+  background-color: var(--headerbackground-color);
 }
 
-.serviceworkitem {
+.serviceworkitem .serviceworkitem {
+  display: block;
   width: 370px;
-  margin-right: 30px;
-  margin-bottom: 30px;
 }
 
 .serviceworkbox {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  margin-bottom: 94px;
   background-color: var(--background-color);
 }
 
@@ -362,6 +368,8 @@ p {
   padding-bottom: 4px;
 }
 
+
+
 /* Ставим стили для наших текстов под заголовками */
 
 .text {
@@ -370,6 +378,7 @@ p {
   letter-spacing: 0.03em;
   color: var(--secondarytext-color);
 }
+
 
 /* Делаем задний фон для футера */
 
@@ -422,6 +431,7 @@ p {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  margin-bottom: 30px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -433,12 +443,6 @@ p {
   padding-bottom: 94px;
 }
 
-.hero.section.container {
-  text-align: center;
-  align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 
 .heromain-title {
   padding-bottom: 30px;
@@ -446,16 +450,26 @@ p {
 
 
 .heromain-title .button.pointer {
-  margin: 0;
+  margin-bottom: 200px;
+display: inline-block;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+      padding: 10px px 32px;
+}
+
+.herobgimage-container {
+  max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+    padding-top: 200px;
+    text-align: center;
+  background-color: var(--footerbackground-color);
 }
 
 .hero.section {
-  text-align: center;
-  align-items: flex-start;
-  margin-bottom: 94px;
   background-color: var(--footerbackground-color);
+  padding: 0;
+  margin-bottom: 94px;
 }
 
 /* Создаем стиль заголовка "Преимущества сервиса" */
@@ -552,8 +566,12 @@ p {
 }
 
 
-.teammembersitem {
-    display: flex;
+.teammembers-item {
+    text-align: center;
+    padding-bottom: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+    
 }
 
 .teammembers.section {
