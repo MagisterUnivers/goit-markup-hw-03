@@ -51,6 +51,11 @@ p {
   margin: 0;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -79,6 +84,13 @@ p {
 }
 
 /* Оформление Навигации */
+
+
+.site-nav.container.headermainbox .site-link.listbox {
+  margin-right: 93px;
+  margin: auto;
+}
+
 
 
 .site-nav.headermainbox {
@@ -301,27 +313,19 @@ p {
 
 
 
-.serviceprojects {
-  align-content: center;
-}
-
-.btnlistbox .btnitem > .button.pointer {
-  display: flex;
-}
-
-.uniteportfolio.container {
+.uniteportfolio .container {
   display: flex;
   background-color: var(--headerbackground-color);
 }
 
 .btnlistbox {
-  display: flex;
+  display: inline-block;
   outline-color: tomato;
   /*    margin-left: auto;
     margin-right: auto;
     margin-bottom: 34px; */
   background-color: var(--portfoliobg-color);
-  width: 575px;
+  width: 574px;
   height: 54px;
   left: 512px;
   top: 174px;
@@ -329,34 +333,30 @@ p {
 
 
 .btnlistbox {
+  display: flex;
+  flex-direction: row;
   margin-right: auto;
   margin-left: auto;
   background-color: var(--headerbackground-color);
 }
 
-.serviceworkitem .serviceworkitem {
-  display: block;
-  width: 370px;
-}
 
-.serviceworkbox {
+.serviceprojects.serviceworkbox {
   display: flex;
+  align-items: center;;
   flex-direction: column;
   flex-wrap: wrap;
   background-color: var(--background-color);
+  width: 1230px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-.serviceworkitem:nth-child(3n) {
-  margin-right: 0px;
+.serviceworkitem {
+  display: block;
 }
 
-.serviceworkitem:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
-}
 
-.serviceprojects-photo {
-  margin-bottom: 20px;
-}
 
 /* Ставим стили для наших заголовков */
 
