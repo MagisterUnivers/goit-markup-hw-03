@@ -1,13 +1,22 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+
+
 :root {
   --primarytext-color: #212121;
   --secondarytext-color: #757575;
   --logo-color: #2196f3;
-  --background-color: #f5f5f5;
+  --background-color: #f5f5f500;
   --headerbackground-color: #ffffff;
   --footerbackground-color: #2f303a;
   --headersecondlogopart-color: #000000;
   --borderheadertransparent-color: #ececec;
   --portfoliobg-color: #eeeeee;
+  --thethirdbgcolor: #F5F4FA;
 }
 
 .visually-hidden {
@@ -25,7 +34,6 @@
 }
 
 body {
-  background-color: var(--background-color);
   color: var(--primarytext-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -65,7 +73,7 @@ p {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
+  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -81,6 +89,14 @@ p {
   text-decoration: none;
 }
 
+.logo.headerlogoitem {
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 93px;
+
+}
+
 .headersecondlogo {
   color: var(--headersecondlogopart-color);
 }
@@ -93,8 +109,8 @@ p {
 
 
 .site-nav.container.headermainbox .site-link.listbox {
-  margin-right: 93px;
-  margin: auto;
+ margin: 0;
+ padding: 0;
 }
 
 
@@ -105,24 +121,22 @@ p {
 }
 
 .site-nav.headermainbox  {
-  width: 1230px;
+  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin: auto;
 
 }
 
-.site-nav.headermainbox .logo {
-  padding-left: 15px;
-  padding-right: 15px;
-}
 
 .site-link.listbox {
   padding-right: 93px;
 }
 
 .site-contact.listbox {
-  padding-right: 93px;
+  display: flex;
+  padding: 0;
+  margin-left: auto;
 }
 
 .site-nav .link {
@@ -246,6 +260,7 @@ p {
 
 .uniteportfolio.container {
   margin-top: 94px;
+  margin-bottom: -94px;
   align-items: center;
   display: flex;
 }
@@ -266,12 +281,15 @@ p {
 }
 
 .buttoncollection-list  .button.filter {
-  padding-left: 25px;
+  padding-left: 22px;
   padding-top: 6px;
   padding-bottom: 6px;
-  padding-right: 25px;
+  padding-right: 22px;
       border-color: transparent;
         border-radius: 4px;
+        background-color: var(--thethirdbgcolor);
+        color: var(--primarytext-color);
+
 
 }
 
@@ -322,6 +340,22 @@ p {
 .uniteportfolio .container {
   display: flex;
   background-color: var(--headerbackground-color);
+  margin-bottom: 50px;
+}
+
+.uniteportfolio .button:last-child {
+  margin-right: 8px;
+}
+
+.serviceprojects-photo {
+  margin-bottom: 20px;
+}
+
+.serviceworkitem {
+  padding-bottom: 20px;
+    margin-bottom: 30px;
+    border: 1px solid var(--portfoliobg-color);
+
 }
 
 .btnlistbox {
@@ -331,11 +365,12 @@ p {
     margin-right: auto;
     margin-bottom: 34px; */
   background-color: var(--portfoliobg-color);
-  width: 574px;
   height: 54px;
   left: 512px;
   top: 174px;
+  justify-content: center;
 }
+
 
 
 .btnlistbox {
@@ -349,20 +384,24 @@ p {
 
 .serviceprojects.serviceworkbox {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   background-color: var(--background-color);
-  width: 1230px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding: 0;
+  margin: 94px auto;
 }
 
 .serviceworkitem {
+  justify-content: center;
   display: block;
 }
 
-
+.serviceworkitem:not(:nth-child(3n)) {
+  margin: 0 30px 30px 0;
+}
 
 /* Ставим стили для наших заголовков */
 
@@ -371,9 +410,14 @@ p {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primarytext-color);
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 
+
+.serviceworkitem__content  {
+  padding: 20px 24px;
+
+}
 
 
 /* Ставим стили для наших текстов под заголовками */
@@ -388,20 +432,27 @@ p {
 
 /* Делаем задний фон для футера */
 
-.footermainsection.container {
+.footermainsection {
   background-color: var(--footerbackground-color);
-  padding-top: 60px;
-  padding-left: auto;
-  padding-right: auto;
 }
 
-.footeritem {
+.footerlogoitempix {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footerlogoitem.container {
+  padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footeradress {
   display: block;
 }
 
-.footerbox {
-  display: flex;
-  flex-direction: column;
+.footerbox .footeritem:not(:last-child) {
+  margin-bottom: 9px;
+
 }
 
 /* Ставим стили для контактов в футере */
@@ -464,7 +515,7 @@ display: inline-block;
 }
 
 .herobgimage-container {
-  max-width: 1230px;
+  max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
     padding-top: 200px;
@@ -494,8 +545,8 @@ display: inline-block;
 
 .serviceadv-list {
   display: flex;
-  align-items: center;
-  width: 1230;
+  align-items: flex-start;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-top: 0;
@@ -554,6 +605,7 @@ display: inline-block;
 
 .serviceworkitem {
   display: flex;
+  flex-direction: column;
 }
 
 .servicework-list {
